@@ -1,0 +1,16 @@
+[
+{
+  "modid": "ninjinentities",
+  "name": "Ninjin Entities",
+  "description": "Ninjin Entities For DBC",
+  "version": "1.1.0.0",
+  "mcversion": "1.7.10",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Hedaox"],
+  "credits": "The Forge and FML guys, Jinryuu and Ben for making DBC",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

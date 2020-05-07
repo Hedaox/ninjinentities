@@ -9,9 +9,9 @@ The NPCs use the DBC AI meaning that they can fly and use Ki Attack. Also with t
 
 # Saga files
 
-You also can use my personnal MainDBC.json for having an already made saga with this mod : https://github.com/Hedaox/ninjinentities/releases/download/1.1.0.0/SagaFiles.rar
+You also can use my personal MainDBC.json for having an already made saga with this mod : https://github.com/Hedaox/ninjinentities/releases/download/1.1.0.0/SagaFiles.rar
 
-In the rar file you can found an english and french version of my saga, and also a config file that I recommand for using with this mod. You will have to put the saga file in the "world/data/missions" folder, and the config file in ".minecraft/config".
+In the rar file you can found an English and French version of my saga, and also a config file that I recommend for using with this mod. You will have to put the saga file in the "world/data/missions" folder, and the config file in ".minecraft/config".
 
 # Licensing
 
@@ -32,3 +32,8 @@ You can found full license here : https://www.gnu.org/licenses/gpl-3.0.en.html o
 - Install Forge 1.7.10 : https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_1.7.10.html
 - Install DBC : http://main.jingames.net/minecraft-mods/dragon-block-c/downloads-and-installation/
 - Put the mod in the ".Minecraft/mods" folder : https://github.com/Hedaox/ninjinentities/releases/download/1.1.0.0/ninjinentities-1.1.0.0.jar
+
+# Make a donation
+If you like what I do, you can help by making a donation here : https://www.patreon.com/Hedaox
+
+If you want to use this mod, do not hesitate to MP me, it will make me very happy ^^

@@ -8,7 +8,8 @@ Here a video showing all current NPCs added by this mod : https://www.youtube.co
 The NPCs use the DBC IA meaning that they can fly and use Ki Attack. Also with the last version of DBC some of them have now an aura ! Also some of the NPCs are "trainers", this mean that they won't kill you if they beat you, instead they will put you into a KO state. 
 
 You also can use my personnal MainDBC.json for having an already made saga with this mod : https://github.com/Hedaox/ninjinentities/releases/download/1.1.0.0/SagaFiles.rar
-In the rar file you can found an english and french version of my saga, and also a config file that I recommand for using with this mod.
+
+In the rar file you can found an english and french version of my saga, and also a config file that I recommand for using with this mod. You will have to put the saga file in the "world/data/missions" folder, and the config file in ".minecraft/config".
 
 This mod is under open source license : GNU GENERAL PUBLIC LICENSE Version 3
 What this means is that you can use this mod anyway you want for private use
@@ -26,4 +27,4 @@ You can found full license here : https://www.gnu.org/licenses/gpl-3.0.en.html o
 How to install the mod : 
 - Install Forge 1.7.10 : https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_1.7.10.html
 - Install DBC : http://main.jingames.net/minecraft-mods/dragon-block-c/downloads-and-installation/
-- Put the mod in the .Minecraft/mods folder : https://github.com/Hedaox/ninjinentities/releases/download/1.1.0.0/ninjinentities-1.1.0.0.jar
+- Put the mod in the ".Minecraft/mods" folder : https://github.com/Hedaox/ninjinentities/releases/download/1.1.0.0/ninjinentities-1.1.0.0.jar

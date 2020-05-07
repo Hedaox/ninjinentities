@@ -3,6 +3,8 @@ An entities mod for DBC.
 
 This mod was created by me (Hedaox). This is a simple but very complete mod that add hundreds of new NPCs in the DBC mod made by Jinryuu (Now the mod is developped by his brother Ben). Here his website : http://main.jingames.net/.
 
+Here a video showing all current NPCs added by this mod : https://www.youtube.com/watch?v=IVOn6NEMpUA
+
 This mod is under open source license : GNU GENERAL PUBLIC LICENSE Version 3
 What this means is that you can use this mod anyway you want for private use
 but if you use it any other way you will have to respect this : 

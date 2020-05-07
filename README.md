@@ -5,7 +5,7 @@ This mod was created by me (Hedaox). This is a simple but very complete mod that
 
 Here a video showing all current NPCs added by this mod : https://www.youtube.com/watch?v=IVOn6NEMpUA
 
-The NPCs use the DBC IA meaning that they can fly and use Ki Attack. Also with the last version of DBC some of them have now an aura ! Also some of the NPCs are "trainers", this mean that they won't kill you if they beat you, instead they will put you into a KO state. 
+The NPCs use the DBC AI meaning that they can fly and use Ki Attack. Also with the last version of DBC some of them have now an aura ! Also some of the NPCs are "trainers", this mean that they won't kill you if they beat you, instead they will put you into a KO state. 
 
 # Saga files
 

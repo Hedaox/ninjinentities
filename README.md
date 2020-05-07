@@ -7,6 +7,8 @@ Here a video showing all current NPCs added by this mod : https://www.youtube.co
 
 The NPCs use the DBC IA meaning that they can fly and use Ki Attack. Also with the last version of DBC some of them have now an aura ! Also some of the NPCs are "trainers", this mean that they won't kill you if they beat you, instead they will put you into a KO state. 
 
+# Saga files
+
 You also can use my personnal MainDBC.json for having an already made saga with this mod : https://github.com/Hedaox/ninjinentities/releases/download/1.1.0.0/SagaFiles.rar
 
 In the rar file you can found an english and french version of my saga, and also a config file that I recommand for using with this mod. You will have to put the saga file in the "world/data/missions" folder, and the config file in ".minecraft/config".

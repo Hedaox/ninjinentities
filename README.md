@@ -36,4 +36,4 @@ You can found full license here : https://www.gnu.org/licenses/gpl-3.0.en.html o
 # Make a donation
 If you like what I do, you can help by making a donation here : https://www.patreon.com/Hedaox
 
-If you want to use this mod, do not hesitate to MP me, it will make me very happy ^^
+If you want to use this mod, do not hesitate to PM me, it will make me very happy ^^

@@ -1,4 +1,5 @@
-# ninjinentities
+# Ninjin Entities
+
 An entities mod for DBC 1.4.68.
 
 This mod was created by me (Hedaox). This is a simple but very complete mod that add hundreds of new NPCs in the DBC mod made by Jinryuu (Now the mod is developped by his brother Ben). Here his website : http://main.jingames.net/.
@@ -29,11 +30,13 @@ but if you use it any other way you will have to respect this :
 You can found full license here : https://www.gnu.org/licenses/gpl-3.0.en.html or in the mod files.
 
 # How to install the mod : 
+
 - Install Forge 1.7.10 : https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_1.7.10.html
 - Install DBC : http://main.jingames.net/minecraft-mods/dragon-block-c/downloads-and-installation/
 - Put the mod in the ".Minecraft/mods" folder : https://github.com/Hedaox/ninjinentities/releases/download/1.1.0.0/ninjinentities-1.1.0.0.jar
 
 # Make a donation
+
 If you like what I do, you can help by making a donation here : https://www.patreon.com/Hedaox
 
 If you want to use this mod, do not hesitate to PM me, it will make me very happy ^^

@@ -12,7 +12,7 @@ The NPCs use the DBC AI meaning that they can fly and use Ki Attack. Also with t
 
 You also can use my personal MainDBC.json for having an already made saga with this mod : https://github.com/Hedaox/ninjinentities/releases/download/1.1.0.0/SagaFiles.rar
 
-In the rar file you can found an English and French version of my saga, and also a config file that I recommend for using with this mod. You will have to put the saga file in the "world/data/missions" folder, and the config file in ".minecraft/config".
+In the rar file you can found two Saga folders, inside the first one, the saga will give you TPs and alignment at the end of the quests and the other won't. There is two translated version for the moment: English and French (you can send me saga in other translated language, I will add them in the rar). Also a config file is inside, that I recommend for using with this mod. You will have to put the saga file in the "world/data/missions" folder, and the config file in ".minecraft/config".
 
 # Licensing
 

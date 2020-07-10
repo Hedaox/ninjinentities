@@ -140,8 +140,8 @@ public class NinjinRenderEntities {
 		RenderingRegistry.registerEntityRenderingHandler(EntityGokuBlackR.class, new RenderDBC(new ModelGokuSsj(1.0F), 0.5F));
 		RenderingRegistry.registerEntityRenderingHandler(EntityZamasu.class, new RenderDBC(new ModelZamasu(1.0F), 0.5F));
 		RenderingRegistry.registerEntityRenderingHandler(EntityZamasuMerged.class, new RenderDBC(new ModelZamasuMerged(1.0F), 0.5F));
-		RenderingRegistry.registerEntityRenderingHandler(EntityJiren.class, new RenderDBC(new ModelNPCNormalScale(1.1F, 1.1F, 1.1F), 0.5F));
-		RenderingRegistry.registerEntityRenderingHandler(EntityJirenSuperFullPower.class, new RenderDBC(new ModelNPCNormalScale(1.15F, 1.15F, 1.15F), 0.5F));
+		RenderingRegistry.registerEntityRenderingHandler(EntityJiren.class, new RenderDBC(new ModelJiren(1.1F, 1.1F, 1.1F), 0.5F));
+		RenderingRegistry.registerEntityRenderingHandler(EntityJirenSuperFullPower.class, new RenderDBC(new ModelJiren(1.15F, 1.15F, 1.15F), 0.5F));
 		RenderingRegistry.registerEntityRenderingHandler(EntityToppo.class, new RenderDBC(new ModelToppo(1.2F), 0.5F));
 		RenderingRegistry.registerEntityRenderingHandler(EntityToppoGOD.class, new RenderDBC(new ModelToppo(1.3F), 0.5F));
 		RenderingRegistry.registerEntityRenderingHandler(EntityDyspo.class, new RenderDBC(new ModelDyspo(0.9F,1.0F,0.9F), 0.5F));

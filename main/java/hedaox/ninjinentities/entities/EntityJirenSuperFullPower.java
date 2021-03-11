@@ -7,10 +7,10 @@ import net.minecraft.world.World;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class EntityJirenSuperFullPower extends EntityDBCGoodNinjin {
+public class EntityJirenSuperFullPower extends EntityDBCNinjin {
 
 	public EntityJirenSuperFullPower(World par1World) {
-		super(par1World, 85, MindState.AGGRESSIVE, false, true, 255.0F, 0.0F, 0.0F);
+		super(par1World, 85, MindState.AGGRESSIVE, false, true, new byte[]{3, 5}, new byte[]{8, 8}, 255.0F, 0.0F, 0.0F, false, true,200.0F, 50.0F, 50.0F);
 		this.experienceValue = 80;
 		this.angerLevel = 400;
 		this.setSize(0.69F,2.07F);

@@ -6,10 +6,10 @@ import net.minecraft.world.World;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class EntityFrost3 extends EntityDBCEvilNinjin {
+public class EntityFrost3 extends EntityDBCNinjin {
 
 	public EntityFrost3(World par1World) {
-		super(par1World, 5, MindState.NEUTRAL, false, false);
+		super(par1World, 5, MindState.NEUTRAL, false, false, new byte[]{3, 1, 5}, new byte[]{4, 4 ,4});
 		this.experienceValue = 80;
 		this.angerLevel = 400;
 		this.setSize(0.6F,1.8F);
@@ -26,13 +26,5 @@ public class EntityFrost3 extends EntityDBCEvilNinjin {
 	public String getTexture() {
 		return ModVars.MOD_ID + ":textures/entity/frost3.png";
 	}
-	
-	protected void dropFewItems(boolean par1, int par2) {
-		int var3 = this.rand.nextInt(2 + par2);
-		for (int var4 = 0; var4 < var3; var4++) {
-		}
-		var3 = this.rand.nextInt(2 + par2);
-		for (int var4 = 0; var4 < var3; var4++) {
-		}
-	}
+
 }

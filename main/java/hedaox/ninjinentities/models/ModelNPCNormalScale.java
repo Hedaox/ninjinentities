@@ -6,7 +6,7 @@ import org.lwjgl.opengl.GL11;
 
 import JinRyuu.DragonBC.common.Npcs.ModelNPCNormal;
 
-public class ModelNPCNormalScale extends ModelNPCNormal {
+public class ModelNPCNormalScale extends JinRyuu.DragonBC.common.Npcs.ModelNPCNormal {
 
 	private float scaleX = 1.0F;
 	private float scaleY = 1.0F;

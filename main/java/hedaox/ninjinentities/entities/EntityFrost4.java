@@ -16,10 +16,10 @@ import JinRyuu.JRMCore.entity.EntityEnergyAtt;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class EntityFrost4 extends EntityDBCEvilNinjin {
+public class EntityFrost4 extends EntityDBCNinjin {
 
 	public EntityFrost4(World par1World) {
-		super(par1World, 5, MindState.NEUTRAL, false, false);
+		super(par1World, 5, MindState.NEUTRAL, false, false, new byte[]{3, 1, 5}, new byte[]{4, 4 ,4});
 		this.experienceValue = 80;
 		this.angerLevel = 400;
 		this.setSize(0.6F,1.8F);
@@ -35,9 +35,6 @@ public class EntityFrost4 extends EntityDBCEvilNinjin {
 	@SideOnly(Side.CLIENT)
 	public String getTexture() {
 		return ModVars.MOD_ID + ":textures/entity/frost4.png";
-	}
-	
-	protected void dropFewItems(boolean par1, int par2) {
 	}
 	
 	@Override

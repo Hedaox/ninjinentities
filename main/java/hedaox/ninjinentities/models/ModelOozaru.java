@@ -40,26 +40,26 @@ public class ModelOozaru extends ModelBase {
 		Body.cubeList.add(new ModelBox(Body, 16, 16, -0.2F, -5.4F, -5.8F, 8, 12, 4, 0.0F));
 
 		RArm = new ModelRenderer(this);
-		RArm.setRotationPoint(-4.2F, -3.4F, 0.2F);
+		RArm.setRotationPoint(-0.2F, -3.4F, -3.8F);
 		Body.addChild(RArm);
-		RArm.cubeList.add(new ModelBox(RArm, 40, 16, 0.0F, -2.0F, -6.0F, 4, 12, 4, 0.0F));
+		RArm.cubeList.add(new ModelBox(RArm, 40, 16, -4.0F, -2.0F, -2.0F, 4, 12, 4, 0.0F));
 
 		LArm = new ModelRenderer(this);
-		LArm.setRotationPoint(3.8F, -3.4F, 0.2F);
-		LArm.mirror = true;
+		LArm.setRotationPoint(7.8F, -3.4F, -3.8F);
 		Body.addChild(LArm);
-		LArm.cubeList.add(new ModelBox(LArm, 40, 16, 4.0F, -2.0F, -6.0F, 4, 12, 4, 0.0F));
+		LArm.mirror = true;
+		LArm.cubeList.add(new ModelBox(LArm, 40, 16, 0.0F, -2.0F, -2.0F, 4, 12, 4, 0.0F));
 
 		RLeg = new ModelRenderer(this);
-		RLeg.setRotationPoint(-2.2F, 6.6F, 0.2F);
+		RLeg.setRotationPoint(1.8F, 6.6F, -3.8F);
 		Body.addChild(RLeg);
-		RLeg.cubeList.add(new ModelBox(RLeg, 0, 16, 2.0F, 0.0F, -6.0F, 4, 12, 4, 0.0F));
+		RLeg.cubeList.add(new ModelBox(RLeg, 0, 16, -2.0F, 0.0F, -2.0F, 4, 12, 4, 0.0F));
 
 		LLeg = new ModelRenderer(this);
-		LLeg.setRotationPoint(1.8F, 6.6F, 0.2F);
-		LLeg.mirror = true;
+		LLeg.setRotationPoint(5.8F, 6.6F, -3.8F);
 		Body.addChild(LLeg);
-		LLeg.cubeList.add(new ModelBox(LLeg, 0, 16, 2.0F, 0.0F, -6.0F, 4, 12, 4, 0.0F));
+		LLeg.mirror = true;
+		LLeg.cubeList.add(new ModelBox(LLeg, 0, 16, -2.0F, 0.0F, -2.0F, 4, 12, 4, 0.0F));
 
 		Tail = new ModelRenderer(this);
 		Tail.setRotationPoint(4.0F, 6.0F, -2.0F);

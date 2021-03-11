@@ -1,6 +1,5 @@
 package hedaox.ninjinentities.entities;
 
-import JinRyuu.DragonBC.common.Npcs.EntityBeerus;
 import hedaox.ninjinentities.lib.ModVars;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.world.World;
@@ -8,10 +7,10 @@ import JinRyuu.DragonBC.common.Items.ItemsDBC;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class EntityZamasu extends EntityDBCEvilNinjin {
+public class EntityZamasu extends EntityDBCNinjin {
 
 	public EntityZamasu(World par1World) {
-		super(par1World, 5, EntityDBCEvilNinjin.MindState.NEUTRAL, false, true);
+		super(par1World, 5, EntityDBCNinjin.MindState.NEUTRAL, false, true, new byte[]{2, 1}, new byte[]{3, 3});
 		this.experienceValue = 80;
 		this.angerLevel = 400;
 		this.setSize(0.6F,1.8F);

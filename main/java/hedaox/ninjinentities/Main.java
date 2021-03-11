@@ -1,5 +1,7 @@
 package hedaox.ninjinentities;
 
+import cpw.mods.fml.common.event.FMLServerStartingEvent;
+import hedaox.ninjinentities.command.CommandSummonNinjin;
 import hedaox.ninjinentities.proxy.CommonProxy;
 import hedaox.ninjinentities.lib.ModVars;
 import hedaox.ninjinentities.entities.NinjinEntities;
@@ -40,5 +42,12 @@ public class Main
     public void postInit(FMLPostInitializationEvent $e)
     {
     	proxy.postInit($e);
+    }
+
+    @EventHandler
+    public void serverLoad(FMLServerStartingEvent event)
+    {
+        // register server commands
+        event.registerServerCommand(new CommandSummonNinjin());
     }
 }

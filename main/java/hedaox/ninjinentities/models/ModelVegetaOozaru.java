@@ -42,40 +42,40 @@ public class ModelVegetaOozaru extends ModelBase {
 		Body.cubeList.add(new ModelBox(Body, 16, 16, -0.2F, -5.4F, -5.8F, 8, 12, 4, 0.0F));
 
 		RArm = new ModelRenderer(this);
-		RArm.setRotationPoint(-4.2F, -3.4F, 0.2F);
+		RArm.setRotationPoint(-0.2F, -3.4F, -3.8F);
 		Body.addChild(RArm);
-		RArm.cubeList.add(new ModelBox(RArm, 40, 16, 0.0F, -2.0F, -6.0F, 4, 12, 4, 0.0F));
+		RArm.cubeList.add(new ModelBox(RArm, 40, 16, -4.0F, -2.0F, -2.0F, 4, 12, 4, 0.0F));
 
 		RShoulderArmor = new ModelRenderer(this);
-		RShoulderArmor.setRotationPoint(4.0F, -2.0F, -4.0F);
-		RShoulderArmor.mirror = true;
+		RShoulderArmor.setRotationPoint(0.0F, -2.0F, 0.0F);
 		setRotationAngle(RShoulderArmor, -1.5708F, 0.0F, 0.0873F);
 		RArm.addChild(RShoulderArmor);
+		RShoulderArmor.mirror = true;
 		RShoulderArmor.cubeList.add(new ModelBox(RShoulderArmor, 26, 0, -6.0F, -3.0F, 0.0F, 6, 6, 2, 0.0F));
 
 		LArm = new ModelRenderer(this);
-		LArm.setRotationPoint(3.8F, -3.4F, 0.2F);
-		LArm.mirror = true;
+		LArm.setRotationPoint(7.8F, -3.4F, -3.8F);
 		Body.addChild(LArm);
-		LArm.cubeList.add(new ModelBox(LArm, 40, 16, 4.0F, -2.0F, -6.0F, 4, 12, 4, 0.0F));
-		
+		LArm.mirror = true;
+		LArm.cubeList.add(new ModelBox(LArm, 40, 16, 0.0F, -2.0F, -2.0F, 4, 12, 4, 0.0F));
+
 		LShoulderArmor = new ModelRenderer(this);
-		LShoulderArmor.setRotationPoint(4.0F, -2.0F, -4.0F);
+		LShoulderArmor.setRotationPoint(0.0F, -2.0F, 0.0F);
 		setRotationAngle(LShoulderArmor, -1.5708F, 0.0F, -0.0873F);
 		LArm.addChild(LShoulderArmor);
 		LShoulderArmor.cubeList.add(new ModelBox(LShoulderArmor, 26, 0, 0.0F, -3.0F, 0.0F, 6, 6, 2, 0.0F));
 
 		RLeg = new ModelRenderer(this);
-		RLeg.setRotationPoint(-2.2F, 6.6F, 0.2F);
+		RLeg.setRotationPoint(1.8F, 6.6F, -3.8F);
 		Body.addChild(RLeg);
-		RLeg.cubeList.add(new ModelBox(RLeg, 0, 16, 2.0F, 0.0F, -6.0F, 4, 12, 4, 0.0F));
+		RLeg.cubeList.add(new ModelBox(RLeg, 0, 16, -2.0F, 0.0F, -2.0F, 4, 12, 4, 0.0F));
 
 		LLeg = new ModelRenderer(this);
-		LLeg.setRotationPoint(1.8F, 6.6F, 0.2F);
-		LLeg.mirror = true;
+		LLeg.setRotationPoint(5.8F, 6.6F, -3.8F);
 		Body.addChild(LLeg);
-		LLeg.cubeList.add(new ModelBox(LLeg, 0, 16, 2.0F, 0.0F, -6.0F, 4, 12, 4, 0.0F));
-
+		LLeg.mirror = true;
+		LLeg.cubeList.add(new ModelBox(LLeg, 0, 16, -2.0F, 0.0F, -2.0F, 4, 12, 4, 0.0F));
+		
 		Tail = new ModelRenderer(this);
 		Tail.setRotationPoint(4.0F, 6.0F, -2.0F);
 		setRotationAngle(Tail, -0.7854F, 0.0F, 0.0F);

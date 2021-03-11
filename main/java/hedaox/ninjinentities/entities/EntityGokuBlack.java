@@ -7,10 +7,10 @@ import net.minecraft.world.World;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class EntityGokuBlack extends EntityDBCEvilNinjin {
+public class EntityGokuBlack extends EntityDBCNinjin {
 
 	public EntityGokuBlack(World par1World) {
-		super(par1World, 3, MindState.AGGRESSIVE, false, true);
+		super(par1World, 3, MindState.AGGRESSIVE, false, true, new byte[]{3, 1, 5}, new byte[]{3, 3, 3});
 		this.experienceValue = 80;
 		this.angerLevel = 400;
 		this.setSize(0.6F,1.8F);

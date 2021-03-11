@@ -7,14 +7,15 @@ import net.minecraft.world.World;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class EntityVegetaMajin extends EntityDBCNeutNinjin {
+public class EntityVegetaMajin extends EntityDBCNinjin {
 
 	public EntityVegetaMajin(World par1World) {
-		super(par1World, 34, MindState.AGGRESSIVE, false, true, 255.0F, 217.0F, 25.0F);
+		super(par1World, 34, MindState.AGGRESSIVE, false, true, new byte[]{3, 6, 3, 5}, new byte[]{3, 7, 7, 7}, 255.0F, 217.0F, 25.0F, true);
 		this.experienceValue = 80;
 		this.angerLevel = 400;
 		this.setSize(0.6F,1.8F);
 	}
+
 	protected void applyEntityAttributes() {
 		super.applyEntityAttributes();
 		getEntityAttribute(SharedMonsterAttributes.maxHealth).setBaseValue(
@@ -27,6 +28,7 @@ public class EntityVegetaMajin extends EntityDBCNeutNinjin {
 	public String getTexture() {
 		return ModVars.MOD_ID + ":textures/entity/vegetaMajin.png";
 	}
+
 	protected void dropFewItems(boolean par1, int par2) {
 		int var3 = this.rand.nextInt(2 + par2);
 		for (int var4 = 0; var4 < var3; var4++) {

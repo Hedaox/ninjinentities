@@ -6,10 +6,10 @@ import net.minecraft.world.World;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class EntityVegetaCopy extends EntityDBCEvilNinjin {
+public class EntityVegetaCopy extends EntityDBCNinjin {
 
 	public EntityVegetaCopy(World par1World) {
-		super(par1World, 5, MindState.AGGRESSIVE, false, true);
+		super(par1World, 5, MindState.AGGRESSIVE, false, true, new byte[]{3, 6}, new byte[]{3, 3});
 		this.experienceValue = 80;
 		this.angerLevel = 400;
 		this.setSize(0.6F,1.8F);

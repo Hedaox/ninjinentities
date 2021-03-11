@@ -2,9 +2,7 @@ package hedaox.ninjinentities.event;
 
 import JinRyuu.JRMCore.JRMCoreH;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
-import hedaox.ninjinentities.entities.EntityDBCGoodNinjin;
+import hedaox.ninjinentities.entities.EntityDBCNinjin;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.nbt.NBTTagCompound;
@@ -32,8 +30,8 @@ public class EventAttackManager {
 
                     entityKiller = event.entityLiving.func_94060_bK();
                     //Trainer beat player
-                    if (entityKiller instanceof EntityDBCGoodNinjin && JRMCoreH.getInt(loadedPlayer, "jrmcBdy") < 10) {
-                        if (((EntityDBCGoodNinjin) entityKiller).isTrainer) {
+                    if (entityKiller instanceof EntityDBCNinjin && JRMCoreH.getInt(loadedPlayer, "jrmcBdy") < 10) {
+                        if (((EntityDBCNinjin) entityKiller).isTrainer) {
                             //Put Player Health at 10HP
                             JRMCoreH.setInt(10, loadedPlayer, "jrmcBdy");
 
@@ -55,9 +53,9 @@ public class EventAttackManager {
 
                             // Make all Trainers disappear
 
-                            for (Object entity : entityKiller.worldObj.getEntitiesWithinAABB(EntityDBCGoodNinjin.class, AxisAlignedBB.getBoundingBox(entityKiller.posX - 100, entityKiller.posY - 100, entityKiller.posZ - 100, entityKiller.posX + 100, entityKiller.posY + 100, entityKiller.posZ + 100))) {
+                            for (Object entity : entityKiller.worldObj.getEntitiesWithinAABB(EntityDBCNinjin.class, AxisAlignedBB.getBoundingBox(entityKiller.posX - 100, entityKiller.posY - 100, entityKiller.posZ - 100, entityKiller.posX + 100, entityKiller.posY + 100, entityKiller.posZ + 100))) {
 
-                                ((EntityDBCGoodNinjin) entity).setDead();
+                                ((EntityDBCNinjin) entity).setDead();
                             }
 
                         }

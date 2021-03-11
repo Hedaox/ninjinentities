@@ -7,10 +7,10 @@ import net.minecraft.world.World;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class EntityWhis extends EntityDBCGoodNinjin {
+public class EntityWhis extends EntityDBCNinjin {
 
 	public EntityWhis(World par1World) {
-		super(par1World, 50, MindState.NEUTRAL, true, true);
+		super(par1World, 50, MindState.NEUTRAL, true, true, new byte[]{6}, new byte[]{3});
 		this.experienceValue = 80;
 		this.setSize(0.6F,1.98F);
 	}
@@ -24,7 +24,7 @@ public class EntityWhis extends EntityDBCGoodNinjin {
 
 	@SideOnly(Side.CLIENT)
 	public String getTexture() {
-		return ModVars.MOD_ID + ":textures/entity/whis.png";
+		return "jinryuudragonbc:npcs/whis.png";
 	}
 	
 	protected void dropFewItems(boolean par1, int par2) {

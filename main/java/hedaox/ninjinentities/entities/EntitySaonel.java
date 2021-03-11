@@ -6,10 +6,10 @@ import net.minecraft.world.World;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class EntitySaonel extends EntityDBCNeutNinjin {
+public class EntitySaonel extends EntityDBCNinjin {
 
 	public EntitySaonel(World par1World) {
-		super(par1World, 50, MindState.NEUTRAL, false, true);
+		super(par1World, 50, MindState.NEUTRAL, false, true, new byte[]{1, 3, 6}, new byte[]{7, 7, 7});
 		this.experienceValue = 80;
 		this.setSize(0.6F,1.8F);
 	}

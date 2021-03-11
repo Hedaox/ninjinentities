@@ -11,7 +11,7 @@ public class ModVars {
 	public static final String MOD_name = "Ninjin Entities";
 	
 	//Mod version
-	public static final String MOD_version = "1.7.10-1.1.0.0";
+	public static final String MOD_version = "1.7.10-1.2.7.0";
 		
 	//Mod code
 	public static final String MOD_ID = "ninjinentities";

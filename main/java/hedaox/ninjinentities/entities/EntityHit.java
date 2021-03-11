@@ -7,10 +7,10 @@ import net.minecraft.world.World;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class EntityHit extends EntityDBCGoodNinjin {
+public class EntityHit extends EntityDBCNinjin {
 
 	public EntityHit(World par1World) {
-		super(par1World, 90, MindState.NEUTRAL, false, true, 125.0F, 0.0F, 255.0F);
+		super(par1World, 90, MindState.NEUTRAL, false, true, new byte[]{6, 1, 3}, new byte[]{3, 3, 3}, 125.0F, 0.0F, 255.0F);
 		this.experienceValue = 80;
 		this.setSize(0.6F,1.8F);
 	}

@@ -10,6 +10,8 @@ Here a video showing all current NPCs from the Movie saga added by this mod : ht
 
 The NPCs use the DBC AI meaning that they can fly and use Ki Attack. Each entity has his own set of ki attacks with different colors. Also some of them have an aura ! Can be normal, lightning or god. Also some of the NPCs are "trainers", this mean that they won't kill you if they beat you, instead they will put you into a KO state. 
 
+You can use the "/summonninjin ninjinentities.<EntityName>" to summon the NPCs. Use "TAB" to auto complete the command.
+
 # Saga files
 
 You also can use my personal MainDBC.json and MoviesDBC.json for having an already made main and movie saga with this mod : https://github.com/Hedaox/ninjinentities/releases/download/1.2.7.0/SagaFiles.zip

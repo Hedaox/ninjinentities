@@ -2,14 +2,8 @@ package hedaox.ninjinentities.entities;
 
 import hedaox.ninjinentities.lib.ModVars;
 
-import java.util.List;
-
 import JinRyuu.DragonBC.common.Items.ItemsDBC;
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.SharedMonsterAttributes;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.util.DamageSource;
 import net.minecraft.world.World;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;

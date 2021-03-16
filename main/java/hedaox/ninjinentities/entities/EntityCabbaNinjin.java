@@ -33,7 +33,7 @@ public class EntityCabbaNinjin extends EntityDBCNinjin {
 
 	@SideOnly(Side.CLIENT)
 	public String getTexture() {
-		return ModVars.MOD_ID + ":textures/entity/caulifla.png";
+		return ModVars.MOD_ID + ":textures/entity/cabba.png";
 	}
 
 	protected void dropFewItems(boolean par1, int par2) {

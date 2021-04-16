@@ -26,7 +26,7 @@ This mod is under open source license : GNU GENERAL PUBLIC LICENSE Version 3
 What this means is that you can use this mod anyway you want for private use
 but if you use it any other way you will have to respect this : 
  - You cannot claim this mod as being yours.
- - You will have to credit me (Hedaox) for using this mod.
+ - You will have to credit me (Hedaox) for modifying this mod.
  
  If you want to modify the mod :
  - You will have to post the modified version publicly, meaning that your code 

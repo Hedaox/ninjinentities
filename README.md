@@ -38,7 +38,7 @@ You can found full license here : https://www.gnu.org/licenses/gpl-3.0.en.html o
 # How to install the mod : 
 
 - Install Forge 1.7.10 : https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_1.7.10.html
-- Install DBC : http://main.jingames.net/minecraft-mods/dragon-block-c/downloads-and-installation/
+- Install DBC 1.4.73b-TB61 : https://www.mediafire.com/folder/44f9eft2541py/TB61
 - Put the mod in the ".Minecraft/mods" folder : https://github.com/Hedaox/ninjinentities/releases/download/1.2.7.3/ninjinentities-1.2.7.3.jar
 
 # Special Thanks

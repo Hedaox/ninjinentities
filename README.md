@@ -1,6 +1,6 @@
 # Ninjin Entities
 
-An entities mod for DBC 1.4.73.
+An entities mod for DBC 1.4.73b-TB61.
 
 This mod was created by me (Hedaox). This is a simple but very complete mod that add hundreds of new NPCs in the DBC mod made by Jinryuu (Now the mod is developped by his brother Ben). Here his website : http://main.jingames.net/.
 Special thanks to FinTheHuman and JakeTheDog, without whom the Movie saga would not have come out.

@@ -7,30 +7,24 @@ import hedaox.ninjinentities.lib.ModVars;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.world.World;
 
-public class EntityKahseral extends EntityDBCNinjin {
+public class EntityAnirazaNinjin extends EntityDBCNinjin {
 
-	public EntityKahseral(World par1World) {
-		super(par1World, 80, MindState.NEUTRAL, false, true, new byte[]{1,3}, new byte[]{7, 7});
+	public EntityAnirazaNinjin(World par1World) {
+		super(par1World, 85, MindState.NEUTRAL, false, true, new byte[]{3, 5}, new byte[]{4, 4});
 		this.experienceValue = 80;
-		this.setSize(0.6F,1.8F);
+		this.setSize(1.08F,3.24F);
 	}
 	protected void applyEntityAttributes() {
 		super.applyEntityAttributes();
 		getEntityAttribute(SharedMonsterAttributes.maxHealth).setBaseValue(
-				49000.0D);
+				60000.0D);
 		getEntityAttribute(SharedMonsterAttributes.attackDamage).setBaseValue(
-				4900.0D);
+				6000.0D);
 	}
 
 	@SideOnly(Side.CLIENT)
 	public String getTexture() {
-		return ModVars.MOD_ID + ":textures/entity/kahseral.png";
+		return ModVars.MOD_ID + ":textures/entity/aniraza.png";
 	}
-	
-	protected void dropFewItems(boolean par1, int par2) {
-		int var3 = this.rand.nextInt(2 + par2);
-		for (int var4 = 0; var4 < var3; var4++) {
-			dropItem(ItemsDBC.ItemsOutfit3[38], 1);
-		}
-	}
+
 }

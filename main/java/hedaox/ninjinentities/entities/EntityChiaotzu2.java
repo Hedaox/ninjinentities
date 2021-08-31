@@ -18,7 +18,7 @@ public class EntityChiaotzu2 extends EntityDBCNinjin {
 	public int randomSoundDelay = 0;
 
 	public EntityChiaotzu2(World par1World) {
-		super(par1World, 80, MindState.NEUTRAL, true, false, new byte[]{3, 6}, new byte[]{7});
+		super(par1World, 80, MindState.NEUTRAL, true, false, new byte[]{3, 6}, new byte[]{7, 7});
 		this.experienceValue = 80;
 		this.setSize(0.36F,1.08F);
 	}

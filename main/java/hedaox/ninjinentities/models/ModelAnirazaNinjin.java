@@ -7,7 +7,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.util.MathHelper;
 import org.lwjgl.opengl.GL11;
 
-public class ModelAniraza extends ModelBase {
+public class ModelAnirazaNinjin extends ModelBase {
 	private final ModelRenderer Head;
 	private final ModelRenderer EarL;
 	private final ModelRenderer EarR;
@@ -20,7 +20,7 @@ public class ModelAniraza extends ModelBase {
 	private float scaleY = 1.0F;
 	private float scaleZ = 1.0F;
 
-	public ModelAniraza(float _scaleX, float _scaleY, float _scaleZ) {
+	public ModelAnirazaNinjin(float _scaleX, float _scaleY, float _scaleZ) {
 
 		scaleX = _scaleX;
 		scaleY = _scaleY;

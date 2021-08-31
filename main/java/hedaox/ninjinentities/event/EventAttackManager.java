@@ -12,6 +12,9 @@ import net.minecraftforge.event.entity.living.LivingHurtEvent;
 import java.util.Arrays;
 
 public class EventAttackManager {
+
+    private int slowClient = 0;
+
     /**
      * Event is launch everytime an entity is hurt. Is use for putting player in KO State if entity is a trainer (Goku, Piccolo, Trunks etc...)
      *

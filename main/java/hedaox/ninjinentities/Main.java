@@ -1,7 +1,11 @@
 package hedaox.ninjinentities;
 
 import cpw.mods.fml.common.event.FMLServerStartingEvent;
+import cpw.mods.fml.common.network.NetworkRegistry;
+import cpw.mods.fml.common.network.simpleimpl.SimpleNetworkWrapper;
+import cpw.mods.fml.relauncher.Side;
 import hedaox.ninjinentities.command.CommandSummonNinjin;
+import hedaox.ninjinentities.network.MessageSendEntityToSpark;
 import hedaox.ninjinentities.proxy.CommonProxy;
 import hedaox.ninjinentities.lib.ModVars;
 import hedaox.ninjinentities.entities.NinjinEntities;
@@ -26,12 +30,18 @@ public class Main
 	
 	@SidedProxy(clientSide = "hedaox.ninjinentities.proxy.ClientProxy", serverSide = "hedaox.ninjinentities.proxy.ServerProxy")
 	public static CommonProxy proxy;
+
+	public static SimpleNetworkWrapper network;
 	
     @EventHandler
     public void preInit(FMLPreInitializationEvent $e)
     {
     	proxy.preInit($e);
     	NinjinEntities.init();
+
+        network = NetworkRegistry.INSTANCE.newSimpleChannel("MyChannel");
+
+        network.registerMessage(MessageSendEntityToSpark.Handler.class, MessageSendEntityToSpark.class, 0, Side.SERVER);
     }
     @EventHandler
     public void init(FMLInitializationEvent $e)

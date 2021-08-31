@@ -139,14 +139,14 @@ public class NinjinEntities {
 		createEntity(EntityToppoNinjin.class, 64, "toppo");
 		createEntity(EntityToppoNinjinFullPower.class, 64, "toppoGOD");
 		createEntity(EntityDyspoNinjin.class, 64, "dyspo");
-		createEntity(EntityKahseral.class, 64, "kahseral");
-		createEntity(EntityCocotte.class, 64, "cocotte");
+		createEntity(EntityKahseralNinjin.class, 64, "kahseral");
+		createEntity(EntityCocotteNinjin.class, 64, "cocotte");
 		createEntity(EntityVewon.class, 64, "vewon");
 		createEntity(EntityTupper.class, 64, "tupper");
 		createEntity(EntityZoire.class, 64, "zoire");
 		createEntity(EntityKettle.class, 64, "kettle");
 		createEntity(EntityKnsi.class, 64, "knsi");
-		createEntity(EntityAniraza.class, 64, "aniraza");
+		createEntity(EntityAnirazaNinjin.class, 64, "aniraza");
 		createEntity(EntityAniraza2.class, 64, "aniraza2");
 		createEntity(EntityKeflaNinjin.class, 64, "kefla");
 		createEntity(EntityKeflaSsj.class, 64, "keflaSsj");

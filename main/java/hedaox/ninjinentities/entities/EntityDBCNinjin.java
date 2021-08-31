@@ -2,12 +2,14 @@ package hedaox.ninjinentities.entities;
 
 import java.util.List;
 
+import JinRyuu.DragonBC.common.DBCConfig;
 import JinRyuu.DragonBC.common.Npcs.EntityDBCNeut;
 import JinRyuu.JRMCore.JRMCoreConfig;
+import JinRyuu.JRMCore.client.config.jrmc.JGConfigClientSettings;
 import JinRyuu.JRMCore.entity.EntityCusPar;
+import hedaox.ninjinentities.Main;
 import hedaox.ninjinentities.lib.ModVars;
-import hedaox.ninjinentities.network.MessageSendStringSoundToPlay;
-import hedaox.ninjinentities.proxy.ClientProxy;
+import hedaox.ninjinentities.network.MessageSendEntityToSpark;
 import net.minecraft.client.entity.EntityPlayerSP;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.Entity;
@@ -26,6 +28,8 @@ import net.minecraftforge.common.ForgeHooks;
 
 public class EntityDBCNinjin extends EntityDBCNeut {
 
+	private EntityPlayer spwner = null;
+	private int noSpwnr = DBCConfig.mdat;
 	public int angerLevel = 0;
 	protected int aggroCooldown = 0;
 	public int prevAttackCounter = 0;
@@ -473,8 +477,8 @@ public class EntityDBCNinjin extends EntityDBCNeut {
 	@Override
 	public void onLivingUpdate() {
 
-		if ((this.worldObj.isRemote) && (JRMCoreConfig.CLIENT_DA8) && (angerLevel >= 400) && (hasAnAura || auraLightning || hasAGodAura)) {
-			for (int k = 0; k < JRMCoreConfig.get_da1(); k++) {
+		if ((this.worldObj.isRemote) && (JGConfigClientSettings.CLIENT_DA8) && (angerLevel >= 400) && (hasAnAura || auraLightning || hasAGodAura)) {
+			for (int k = 0; k < JGConfigClientSettings.get_da1(); k++) {
 
 				Entity pl = this;
 				float red = auraRed;float green = auraGreen;float blue = auraBlue;
@@ -585,7 +589,7 @@ public class EntityDBCNinjin extends EntityDBCNeut {
 					pl.worldObj.spawnEntityInWorld(entity3);
 
 					if (pl.ticksExisted % 25 == (int) random * 25 || pl.ticksExisted % 70 == 1) {
-						ClientProxy.network.sendToServer(new MessageSendStringSoundToPlay("jinryuudragonbc:1610.spark#" + pl.getEntityId()));
+						Main.network.sendToServer(new MessageSendEntityToSpark(this.getEntityId()));
 						random = Math.random();
 					}
 
@@ -624,6 +628,52 @@ public class EntityDBCNinjin extends EntityDBCNeut {
 	@Override
 	public void onUpdate()
 	{
+		double r = DBCConfig.mdal;
+
+		if(this.spwner == null)
+		{
+			AxisAlignedBB aabb = AxisAlignedBB.getBoundingBox(this.posX - r, this.posY - r, this.posZ - r, this.posX + r, this.posY + r, this.posZ + r);
+			List list = this.worldObj.getEntitiesWithinAABB(EntityPlayer.class, aabb);
+			for (int i = 0; i < list.size(); i++)
+			{
+				this.spwner = (EntityPlayer) list.get(i);
+				break;
+			}
+		}
+
+		if ((this.spwner != null) && (r != 0.0D))
+		{
+			AxisAlignedBB aabb = AxisAlignedBB.getBoundingBox(this.posX - r, this.posY - r, this.posZ - r, this.posX + r, this.posY + r, this.posZ + r);
+			List list = this.worldObj.getEntitiesWithinAABB(EntityPlayer.class, aabb);
+			boolean b = false;
+			int j = 0;
+			int sgid = JRMCoreH.getInt((EntityPlayer)this.spwner, "JRMCGID");
+			for (int i = 0; i < list.size(); i++)
+			{
+				EntityPlayer entity2 = (EntityPlayer)list.get(i);
+				int ogid = JRMCoreH.getInt(entity2, "JRMCGID");
+				if ((this.spwner.getEntityId() == entity2.getEntityId()) || ((sgid != 0) && (sgid == ogid))) {
+					j++;
+				}
+			}
+			if (getEntityId() == this.spwner.getEntityId()) {
+				j++;
+			}
+			if (j == 0)
+			{
+				this.noSpwnr -= 1;
+				if (this.noSpwnr <= 0) {
+					setDead();
+				}
+			}
+			else if (this.noSpwnr != DBCConfig.mdat)
+			{
+				this.noSpwnr = DBCConfig.mdat;
+			}
+		}
+		if ((!this.worldObj.isRemote) && (this.spwner == null)) {
+			setDead();
+		}
 		if (this.worldObj.isRemote) {
 			this.rang += 1;
 		}

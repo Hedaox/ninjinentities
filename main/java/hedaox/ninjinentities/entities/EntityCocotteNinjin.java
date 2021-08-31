@@ -7,9 +7,9 @@ import hedaox.ninjinentities.lib.ModVars;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.world.World;
 
-public class EntityCocotte extends EntityDBCNinjin {
+public class EntityCocotteNinjin extends EntityDBCNinjin {
 
-	public EntityCocotte(World par1World) {
+	public EntityCocotteNinjin(World par1World) {
 		super(par1World, 80, MindState.NEUTRAL, false, true, new byte[]{1,3}, new byte[]{7,3});
 		this.experienceValue = 80;
 		this.setSize(0.51F,1.62F);

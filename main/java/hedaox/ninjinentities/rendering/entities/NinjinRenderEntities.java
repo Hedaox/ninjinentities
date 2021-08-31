@@ -168,7 +168,7 @@ public class NinjinRenderEntities {
 		RenderingRegistry.registerEntityRenderingHandler(EntityZoire.class, new RenderDBC(new ModelNPCNormalScale(0.5F,0.5F,0.5F), 0.5F));
 		RenderingRegistry.registerEntityRenderingHandler(EntityKettle.class, new RenderDBC(new ModelNPCNormalScale(1.05F,1.0F,1.05F), 0.5F));
 		RenderingRegistry.registerEntityRenderingHandler(EntityKnsi.class, new RenderDBC(new ModelNPCNormalScale(0.9F,0.8F,0.9F), 0.5F));
-		RenderingRegistry.registerEntityRenderingHandler(EntityAniraza.class, new RenderDBC(new ModelAniraza(1.8F,1.8F,1.8F), 0.5F));
+		RenderingRegistry.registerEntityRenderingHandler(EntityAnirazaNinjin.class, new RenderDBC(new ModelAnirazaNinjin(1.8F,1.8F,1.8F), 0.5F));
 		RenderingRegistry.registerEntityRenderingHandler(EntityAniraza2.class, new RenderDBC(new ModelAniraza2(1.8F,1.8F,1.8F), 0.5F));
 		RenderingRegistry.registerEntityRenderingHandler(EntityKeflaNinjin.class, new RenderDBC(new ModelKeflaNinjin(0.775F,0), 0.5F));
 		RenderingRegistry.registerEntityRenderingHandler(EntityKeflaSsj.class, new RenderDBC(new ModelKeflaNinjin(0.825F,1), 0.5F));

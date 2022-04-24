@@ -1,6 +1,6 @@
 # Ninjin Entities
 
-An entities mod for DBC 1.4.73b-TB61.
+An entities mod for DBC 1.4.78.
 
 This mod was created by me (Hedaox). This is a simple but very complete mod that add hundreds of new NPCs in the DBC mod made by Jinryuu (Now the mod is developped by his brother Ben). Here his website : http://main.jingames.net/.
 Special thanks to FinTheHuman and JakeTheDog, without whom the Movie saga would not have come out.
@@ -14,7 +14,7 @@ You can use the "/summonninjin ninjinentities.\<EntityName\>" to summon the NPCs
 
 # Saga files
 
-You also can use my personal MainDBC.json and MoviesDBC.json for having an already made main and movie saga with this mod : https://github.com/Hedaox/ninjinentities/releases/download/1.2.7.3/SagaFiles.zip
+You also can use my personal MainDBC.json and MoviesDBC.json for having an already made main and movie saga with this mod : https://github.com/Hedaox/ninjinentities/releases/download/1.3.0.0/SagaFiles.zip
 
 In the zip file there is two language directory at the moment : "English" and "French". You can send me saga in other translated language, I will add them in the zip. Then inside a language directory you will find two directory, inside each of them you can find the Main saga and Movie Saga json files. In the directory named "WithTP&Alignment", you can find two sagas that will give you TPs and alignment at the end of each of the quests. the "normal" directory won't give you any TPs or alignment. Also a config file : "jinryuujrmcore.cfg" and a folder : "jingames" is inside the "Config" directory. I recommend this config with this mod. You will have to put the sagas files in the "world/data/missions" folder, and the config file and "jingames" folder in ".minecraft/config".
 
@@ -38,8 +38,8 @@ You can found full license here : https://www.gnu.org/licenses/gpl-3.0.en.html o
 # How to install the mod : 
 
 - Install Forge 1.7.10 : https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_1.7.10.html
-- Install DBC 1.4.73b-TB61 : https://www.mediafire.com/folder/44f9eft2541py/TB61 (You need all files except the naruto one)
-- Put the mod in the ".Minecraft/mods" folder : https://github.com/Hedaox/ninjinentities/releases/download/1.2.7.4/ninjinentities-1.2.7.4.jar
+- Install DBC 1.4.78 : https://dl.jingames.net/?o=dbc (You need all files except the naruto one)
+- Put the mod in the ".Minecraft/mods" folder : https://github.com/Hedaox/ninjinentities/releases/download/1.3.0.0/ninjinentities-1.3.0.0.jar
 
 # Special Thanks
 
